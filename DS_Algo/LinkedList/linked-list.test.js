@@ -3,7 +3,7 @@ const {
   Node
 } = require('./linked-list');
 
-describte('Linked List', () => {
+describe('Linked List', () => {
   describe('creation', () => {
     const list = new LinkedList();
     expect(list).toBeDefined();
@@ -25,11 +25,11 @@ describte('Linked List', () => {
 describe('insertion', () => {
   it('should insert at head with empty list', () => {
     const list =  new LinkedList();
-    list.insert('apples';
+    list.insert('apples');
     expect(list.head.value).toBe('apples');
   });
 
-  xit('should insert at head with populated list', () => {
+  it('should insert at head with populated list', () => {
     const list = new LinkedList();
     list.insert('apples');
     list.insert('bananas');
@@ -38,7 +38,7 @@ describe('insertion', () => {
   })
 })
 
-describe('includes', () => {
+xdescribe('includes', () => {
   it('should return true if value found', () => {
     const list = new LinkedList();
     list.insert('bananas');
@@ -51,5 +51,30 @@ describe('includes', () => {
     list.insert('apples');
     const actual = list.includes('bananas');
     expect(actual).toBe(false);
+  })
+})
+
+xdescribe('print', () => {
+  it('should print out balues', () => {
+    const list = new LinkedList();
+    list.insert('bananas');
+    list.insert('apples');
+    const expected = 'apples, bananas,';
+    const actual = list.print();
+    expect(actual).toBe(expected);
+  })
+})
+
+xdescribe('linked list - node', () => {
+  it('should have null next by default', () => {
+    const expected = null;
+    const actual = (new Node()).next();
+    expect(actual).toBe(expected);
+  });
+
+  it('should have next node when passed to constructor', () => {
+    const apples = new Node('apples');
+    const bananas = new Node('bananas', apples);
+    expect(bananas.next.value).toBe('apples')
   })
 })

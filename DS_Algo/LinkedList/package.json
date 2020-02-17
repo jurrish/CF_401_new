@@ -1,0 +1,20 @@
+{
+  "name": "LinkedList",
+  "version": "1.0.0",
+  "description": "",
+  "main": "linked-list-test.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^25.1.0"
+  },
+  "dependencies": {
+    "bufferutil": "^4.0.1",
+    "canvas": "^2.6.1",
+    "utf-8-validate": "^5.0.2"
+  }
+}
