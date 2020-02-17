@@ -3,9 +3,13 @@ const fs = require('fs')
 module.exports = (err, fileReadComplete) => {
 
   const fileDataFetched = (err, data) => {
-    if(err) throw err;
-    setTimeout(() => fileReadComplete(null, data.toString(), 5000));
-  ;
+    if(err) {
+      fileReadComplete(err)
+      return
+    }
 
-  fs.readFile(path, fileDataFetched);
+    fileReadComplete(null, data.toString());
+  };
+
+  fs.readFile('./hi.txt', fileDataFetched);
 };
