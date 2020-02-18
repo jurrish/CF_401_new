@@ -38,7 +38,7 @@ describe('insertion', () => {
   })
 })
 
-xdescribe('includes', () => {
+describe('includes', () => {
   it('should return true if value found', () => {
     const list = new LinkedList();
     list.insert('bananas');

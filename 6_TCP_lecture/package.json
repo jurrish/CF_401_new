@@ -1,0 +1,19 @@
+{
+  "name": "6_TCP_lecture",
+  "version": "1.0.0",
+  "description": "##So, when an event occurs, a function is triggered and information is sent across the wire.",
+  "main": "server.js",
+  "scripts": {
+    "test": "jest",
+    "start": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "jest": "^25.1.0",
+    "node": "^13.8.0",
+    "uuid": "^3.4.0"
+  }
+}
