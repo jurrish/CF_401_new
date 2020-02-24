@@ -25,7 +25,7 @@ describe('URL Parser', () => {
       .catch( err => false );
   });
 
-  it('given a complicated url, does all the things', () => {
+  xit('given a complicated url, does all the things', () => {
     let req = { method:'GET', url: 'http://localhost?a=b&c=d' };
     return parser(req)
       .then( request => {
