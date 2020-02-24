@@ -2,11 +2,7 @@
 
 //1st party library
 const http = require('http');
-var yodasay = require("yodasay");
 var cowsay = require("cowsay")
-const lolcatjs = require('lolcatjs');
-lolcatjs.options.seed = Math.round(Math.random() * 1000);
-lolcatjs.options.colors = true;
 
 
 //local libraries
