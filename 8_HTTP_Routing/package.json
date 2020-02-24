@@ -1,0 +1,20 @@
+{
+  "name": "8_HTTP_Routing",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "http": "0.0.0",
+    "http-server": "^0.12.1",
+    "httpie": "^1.1.2",
+    "querystring": "^0.2.0",
+    "url": "^0.11.0"
+  }
+}
