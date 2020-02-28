@@ -4,13 +4,16 @@
 const storage = module.exports = {};
 
 // We create a simple object to store our notes in memory
-const database = {};
+let database = {};
 
+storage.clear = () => {
+  database = {};
+};
 // This use a straight "Promise.resolve"
 // When you do this, you don't have to do the whole promise wiring.
 // Rather, JS just returns a promise and immediately resolves it for you
 storage.getAll = () => {
-  return Promise.resolve(database);
+  return Promise.resolve(Object.values(database));
 };
 
 // To get a single note, check for it in the database, and resolve with it
